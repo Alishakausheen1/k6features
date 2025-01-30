@@ -2,6 +2,8 @@ import http from 'k6/http';
 
 import { sleep } from 'k6';
 
+//loop that calls the default function for the specified number of times
+
 export const options = {
   iterations: 150,
   vus: 100,

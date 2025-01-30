@@ -23,7 +23,7 @@ export default async function () {
   try {
     await page.goto('https://test.k6.io/my_messages.php');
 
-    await page.locator('input[name="login"]').type('admin');
+    await page.locator('input[name="login"]').type('abc');
     await page.locator('input[name="password"]').type('123');
 
     const submitButton = page.locator('input[type="submit"]');

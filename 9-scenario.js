@@ -1,10 +1,10 @@
 import http from 'k6/http';
-
+//Scenarios are used to model and configure diverse workloads, or traffic patterns in load tests
 
 export const options = {
     scenarios: {
       constant_load: {
-        executor: 'constant-arrival-rate',
+        executor: 'constant-arrival-rate', //A fixed number of iterations are executed in a specified period of time
         preAllocatedVUs: 100,
         rate: 10,
         timeUnit: '1m',

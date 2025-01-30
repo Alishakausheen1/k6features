@@ -2,7 +2,9 @@ import http from 'k6/http';
 import { Trend } from 'k6/metrics';
 import { check } from 'k6';
 
+//Tags categorize  checks, thresholds, custom metrics, etc
 const myTrend = new Trend('my_trend');
+
 
 export default function () {
   

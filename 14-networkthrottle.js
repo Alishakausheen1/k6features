@@ -1,4 +1,6 @@
 import { browser, networkProfiles } from 'k6/browser';
+// intentionally slow down the simulated network speed during a load test, 
+// allowing you to test how your application performs under conditions of low bandwidth
 
 export const options = {
   scenarios: {
