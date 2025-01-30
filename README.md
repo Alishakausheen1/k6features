@@ -8,7 +8,10 @@ Run following commands
 Step1:-
 
 git clone https://github.com/Junnygram/student-crud-api.git
+
+
 cd student-crud-api/
+
 npm install
 
 Step2:-
